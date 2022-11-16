@@ -1,4 +1,4 @@
-function CreateButton(buttonText)
+function CreateButton(buttonText,Callback)
     local Button = Instance.new("ScreenGui")
     local Drag = Instance.new("ImageLabel")
     local MAIN = Instance.new("ImageLabel")
@@ -49,6 +49,9 @@ function CreateButton(buttonText)
     Button_2.TextScaled = true
     Button_2.TextSize = 23.000
     Button_2.TextWrapped = true
+    Button_2.MouseButton1Click:Connect(function()
+        ({Callback})[1]()
+    end)
     
     ButtonRound.Name = "ButtonRound"
     ButtonRound.Parent = Button_2
