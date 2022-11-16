@@ -1,4 +1,5 @@
-function CreateButton(buttonText,Callback)
+button={}
+function button.new(buttonText,Callback)
     local Button = Instance.new("ScreenGui")
     local Drag = Instance.new("ImageLabel")
     local MAIN = Instance.new("ImageLabel")
@@ -116,4 +117,4 @@ function CreateButton(buttonText,Callback)
         end
     end) 
 end
-return CreateButton
+return button
