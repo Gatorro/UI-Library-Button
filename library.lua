@@ -7,7 +7,7 @@ function button.new(buttonText,Callback)
     local ButtonRound = Instance.new("ImageLabel")
     local DragBg = Instance.new("ImageLabel")
 
-    Button.Name = "Button"
+    Button.Name = "Button"..tostring(math.random(0,2500))
     Button.Parent = game.CoreGui
     
     Drag.Name = "Drag"
