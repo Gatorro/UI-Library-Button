@@ -11,9 +11,10 @@ function CreateButton(buttonText,Callback)
     
     Drag.Name = "Drag"
     Drag.Parent = Button
+    Drag.AnchorPoint = Vector2.new(0.5, 0.5)
     Drag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Drag.BackgroundTransparency = 1.000
-    Drag.Position = UDim2.new(0, 507, 0, 347)
+    Drag.Position = UDim2.new(0.5, 0, 0.5, 0)
     Drag.Size = UDim2.new(0, 114, 0, 6)
     Drag.ZIndex = 2
     Drag.Image = "rbxassetid://3570695787"
