@@ -1,10 +1,13 @@
 # -- Script Examples --
 ### Created by Gatorro#1354
 ```lua
+-- Library:
 local ButtonLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gatorro/UI-Library-Button/main/library.lua"))()
+-- Button Function:
 function ButtonClickedFunction()
     game.Players.LocalPlayer.Character:FindFirstChild("Head"):Destroy()
 end
+-- Create a Button:
 ButtonText = "Click to Die"
 button.new(ButtonText,ButtonClickedFunction)
 ```
